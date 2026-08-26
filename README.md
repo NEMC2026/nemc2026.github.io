@@ -13,4 +13,5 @@ Things to fill in as they become available (search for the HTML comments in `ind
 
 - Registration link (section `#register`)
 - Contact email (section `#register`)
+- Dartmouth presenter (section `#presenters`)
 - Full program schedule (section `#program`)

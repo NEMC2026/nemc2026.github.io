@@ -115,6 +115,16 @@
     dl.details dt { color: var(--muted); font-size: .9rem; padding-top: 2px; }
     dl.details dd { margin: 0; }
 
+    /* Presenters */
+    .presenters { list-style: none; padding: 0; margin: 8px 0 0; border-top: 1px solid var(--line); }
+    .presenters li {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 20px; align-items: baseline;
+      padding: 16px 0; border-bottom: 1px solid var(--line);
+    }
+    .presenters .name { font-family: var(--serif); font-size: 1.3rem; color: var(--ink); }
+    .presenters .affil { color: var(--muted); }
+    .presenters .tba .name { color: var(--muted); font-style: italic; }
+
     /* Program */
     .program { border-top: 1px solid var(--line); margin-top: 8px; }
     .program .row {
@@ -132,6 +142,7 @@
       dl.details { grid-template-columns: 1fr; gap: 4px; }
       dl.details dt { margin-top: 12px; }
       .program .row { grid-template-columns: 1fr; gap: 4px; }
+      .presenters li { grid-template-columns: 1fr; gap: 2px; }
     }
   </style>
 </head>
@@ -142,6 +153,7 @@
       <a class="brand" href="#top">NEMC 2026</a>
       <ul>
         <li><a href="#about">About</a></li>
+        <li><a href="#presenters">Presenters</a></li>
         <li><a href="#program">Program</a></li>
         <li><a href="#venue">Venue</a></li>
         <li><a href="#register">Register</a></li>
@@ -176,6 +188,20 @@
         <li>MIT</li>
         <li>Dartmouth</li>
         <li>Cornell</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="presenters">
+    <div class="wrap">
+      <h2>Presenters</h2>
+      <p class="note">One presenter from each participating university.</p>
+      <ul class="presenters">
+        <li><span class="name">Tong Wang</span><span class="affil">Yale School of Management</span></li>
+        <li><span class="name">Maren Hoff</span><span class="affil">Harvard Business School</span></li>
+        <li><span class="name">Ruru Hoong</span><span class="affil">MIT Sloan School of Management</span></li>
+        <li class="tba"><span class="name">To be announced</span><span class="affil">Dartmouth</span></li>
+        <li><span class="name">Jacqueline R. Rifkin</span><span class="affil">Cornell University</span></li>
       </ul>
     </div>
   </section>
