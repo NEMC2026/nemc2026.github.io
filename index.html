@@ -129,11 +129,6 @@
     .presenters .affil { color: var(--muted); }
     .presenters .tba .name { color: var(--muted); font-style: italic; }
 
-    /* Registration */
-    .form-embed { margin-top: 28px; border: 1px solid var(--line); border-radius: 8px; overflow: hidden; background: var(--bg-soft); }
-    .form-embed iframe { display: block; width: 100%; height: 1800px; border: 0; }
-    .form-embed + .note { margin-top: 12px; }
-
     footer { padding: 40px 0 56px; color: rgba(255,255,255,.85); font-size: .88rem; background: var(--ink); }
     footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 
@@ -233,14 +228,13 @@
       <p>Attendance is open to faculty and doctoral students from the participating universities.</p>
 
       <!-- Registration is driven by the Google Form URL set in the script at the bottom of this page.
-           Leave it empty and this section shows "opens soon"; fill it in and the button + embedded form appear. -->
+           Leave it empty and this section shows "opens soon"; fill it in and the Register button appears. -->
       <div id="reg-closed">
         <p class="note">Registration details will be announced here and circulated to member departments.</p>
       </div>
       <div id="reg-open" hidden>
         <p><a class="btn primary" id="reg-link" href="#" target="_blank" rel="noopener">Register now</a></p>
-        <div class="form-embed"><iframe id="reg-frame" title="NEMC 2026 registration form" loading="lazy"></iframe></div>
-        <p class="note">If the form does not load above, use the <a id="reg-link-alt" href="#" target="_blank" rel="noopener">registration form directly</a>.</p>
+        <p class="note">The registration form opens in a new tab.</p>
       </div>
 
       <p class="note">Questions? Please contact the organizing committee.
@@ -262,11 +256,7 @@
 
   (function () {
     if (!REGISTRATION_FORM_URL) return;
-    const base = REGISTRATION_FORM_URL.split("?")[0];
-    const embed = base + "?embedded=true";
     document.getElementById("reg-link").href = REGISTRATION_FORM_URL;
-    document.getElementById("reg-link-alt").href = REGISTRATION_FORM_URL;
-    document.getElementById("reg-frame").src = embed;
     document.getElementById("reg-closed").hidden = true;
     document.getElementById("reg-open").hidden = false;
   })();
