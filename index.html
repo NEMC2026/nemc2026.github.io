@@ -128,6 +128,17 @@
     .presenters .name { font-family: var(--serif); font-size: 1.3rem; color: var(--ink); }
     .presenters .affil { color: var(--muted); }
 
+    /* Program */
+    .program { border-top: 1px solid var(--line); margin-top: 8px; }
+    .program .row {
+      display: grid; grid-template-columns: 190px 1fr; gap: 20px;
+      padding: 14px 0; border-bottom: 1px solid var(--line);
+    }
+    .program .row time { color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap; }
+    .program .row .talk .who { font-family: var(--serif); font-size: 1.15rem; color: var(--ink); }
+    .program .row .talk .affil { color: var(--muted); font-size: .92rem; }
+    .program .row.misc div { color: var(--text); }
+
     footer { padding: 40px 0 56px; color: rgba(255,255,255,.85); font-size: .88rem; background: var(--ink); }
     footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 
@@ -137,6 +148,7 @@
       dl.details { grid-template-columns: 1fr; gap: 4px; }
       dl.details dt { margin-top: 12px; }
       .presenters li { grid-template-columns: 1fr; gap: 2px; }
+      .program .row { grid-template-columns: 1fr; gap: 4px; }
     }
   </style>
 </head>
@@ -203,7 +215,18 @@
   <section id="program">
     <div class="wrap">
       <h2>Program</h2>
-      <p class="note">TBD — the full schedule will be posted here closer to the meeting.</p>
+      <p class="note">Friday, October 23, 2026. Talk titles will be added as they are confirmed.</p>
+      <div class="program">
+        <div class="row misc"><time>10:00 – 10:45 AM</time><div>Registration and breakfast</div></div>
+        <div class="row"><time>10:45 – 11:30 AM</time><div class="talk"><div class="who">Maren Hoff</div><div class="affil">Harvard Business School</div></div></div>
+        <div class="row misc"><time>11:30 – 11:45 AM</time><div>Break</div></div>
+        <div class="row"><time>11:45 AM – 12:30 PM</time><div class="talk"><div class="who">Tong Wang</div><div class="affil">Yale School of Management</div></div></div>
+        <div class="row misc"><time>12:30 – 1:30 PM</time><div>Lunch</div></div>
+        <div class="row"><time>1:30 – 2:15 PM</time><div class="talk"><div class="who">Jacqueline R. Rifkin</div><div class="affil">Cornell University</div></div></div>
+        <div class="row"><time>2:15 – 3:00 PM</time><div class="talk"><div class="who">Ruru Hoong</div><div class="affil">MIT Sloan School of Management</div></div></div>
+        <div class="row"><time>3:00 – 3:45 PM</time><div class="talk"><div class="who">Lauren Grewal</div><div class="affil">Dartmouth College</div></div></div>
+        <div class="row misc"><time>Evening</time><div>Reception and dinner</div></div>
+      </div>
     </div>
   </section>
 

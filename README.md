@@ -13,4 +13,4 @@ Things to fill in as they become available (search for the HTML comments in `ind
 
 - Registration form is live (Google Form, set via `REGISTRATION_FORM_URL` at the bottom of `index.html`)
 - Contact email (section `#register`)
-- Full program schedule (section `#program`)
+- Talk titles in the schedule (section `#program`)
