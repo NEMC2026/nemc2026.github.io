@@ -139,6 +139,12 @@
     .program .row .talk .affil { color: var(--muted); font-size: .92rem; }
     .program .row.misc div { color: var(--text); }
 
+    /* Maps */
+    .maps { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 28px; }
+    .maps figure { margin: 0; }
+    .maps iframe { display: block; width: 100%; height: 300px; border: 0; border-radius: 8px; border: 1px solid var(--line); }
+    .maps figcaption { font-size: .88rem; color: var(--muted); margin-top: 8px; }
+
     footer { padding: 40px 0 56px; color: rgba(255,255,255,.85); font-size: .88rem; background: var(--ink); }
     footer .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; justify-content: space-between; }
 
@@ -149,6 +155,7 @@
       dl.details dt { margin-top: 12px; }
       .presenters li { grid-template-columns: 1fr; gap: 2px; }
       .program .row { grid-template-columns: 1fr; gap: 4px; }
+      .maps { grid-template-columns: 1fr; }
     }
   </style>
 </head>
@@ -247,6 +254,18 @@
         <dt>Getting there</dt>
         <dd>Kendall/MIT station on the MBTA Red Line is a short walk from campus.</dd>
       </dl>
+      <div class="maps">
+        <figure>
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: MIT Sloan, 100 Main Street"
+            src="https://www.google.com/maps?q=MIT+Sloan+School+of+Management,+100+Main+Street,+Cambridge,+MA+02142&output=embed"></iframe>
+          <figcaption>Conference — Sloan Building, 100 Main Street</figcaption>
+        </figure>
+        <figure>
+          <iframe loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Map: The Locke Bar, 6 Broad Canal Way"
+            src="https://www.google.com/maps?q=The+Locke+Bar,+6+Broad+Canal+Way,+Cambridge,+MA+02142&output=embed"></iframe>
+          <figcaption>Reception — The Locke Bar, 6 Broad Canal Way</figcaption>
+        </figure>
+      </div>
     </div>
   </section>
 
