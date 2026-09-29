@@ -12,5 +12,4 @@ Edit the file and push to `main`; GitHub Pages redeploys automatically within a 
 Things to fill in as they become available (search for the HTML comments in `index.html`):
 
 - Registration form is live (Google Form, set via `REGISTRATION_FORM_URL` at the bottom of `index.html`)
-- Contact email (section `#register`)
 - Talk titles in the schedule (section `#program`)
