@@ -272,18 +272,8 @@
   <section id="register">
     <div class="wrap">
       <h2>Registration</h2>
-      <p>Attendance is open to faculty and doctoral students from the participating universities.</p>
-
-      <!-- Registration is driven by the Google Form URL set in the script at the bottom of this page.
-           Leave it empty and this section shows "opens soon"; fill it in and the Register button appears. -->
-      <div id="reg-closed">
-        <p class="note">Registration details will be announced here and circulated to member departments.</p>
-      </div>
-      <div id="reg-open" hidden>
-        <p><a class="btn primary" id="reg-link" href="#" target="_blank" rel="noopener">Register now</a></p>
-        <p class="note">The registration form opens in a new tab.</p>
-      </div>
-
+      <p class="lede">Registration for NEMC 2026 is now closed.</p>
+      <p>Room details and program updates will be sent to registered attendees by email.</p>
       <p class="note">Questions? Contact Tong Wang at <a href="mailto:tong.wang.tw687@yale.edu">tong.wang.tw687@yale.edu</a>.</p>
     </div>
   </section>
@@ -295,16 +285,5 @@
     </div>
   </footer>
 
-<script>
-  // Paste the Google Form link here (the "Send" → link, e.g. https://docs.google.com/forms/d/e/.../viewform?usp=sf_link).
-  const REGISTRATION_FORM_URL = "https://docs.google.com/forms/d/e/1FAIpQLScb0Gj5kjQEXqXObjjJwS-sqlCAwdY0CRdHvPYEe5xFs8kwAw/viewform";
-
-  (function () {
-    if (!REGISTRATION_FORM_URL) return;
-    document.getElementById("reg-link").href = REGISTRATION_FORM_URL;
-    document.getElementById("reg-closed").hidden = true;
-    document.getElementById("reg-open").hidden = false;
-  })();
-</script>
 </body>
 </html>
