@@ -12,4 +12,3 @@ Edit the file and push to `main`; GitHub Pages redeploys automatically within a 
 Things to fill in as they become available (search for the HTML comments in `index.html`):
 
 - Registration is closed (static notice in section `#register`)
-- Talk titles in the schedule (section `#program`)
